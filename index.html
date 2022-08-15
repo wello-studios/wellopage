@@ -5,9 +5,9 @@
         <meta name="theme-color" content="#c0c0c0">
         <meta property="og:title" content="WelloStudio!">
         <link rel="stylesheet" href="css/style.css">
-        <title>Wello Studio!!!</title>
+        <title>Welindows Home</title>
     </head>
-    <body>
+    <body id="body">
         <header class="mainheader">
             <h1>
                 <a href="index.html" class="headertitle">Wello!!!</a>
@@ -16,7 +16,7 @@
                 <ul>
                     <li>
                         <a><button type="button" class="btn1" onclick="minipage()"><img class="icon" src="icons/underbar.png"></button></a>
-                        <a><button type="button" class="btn1" onclick="fullpage()"><img class="icon" src="icons/fullsite.png"></button></a>
+                        <a><button type="button" class="btn1" onclick="fullpage()"><img class="icon" src="icons/bx-window.svg"></button></a>
                         <a><button type="button" class="btn1" onclick="closepage()">X</button></a>
                     </li>
                 </ul>
@@ -26,9 +26,9 @@
             <nav class="testbox">
                 <nav class="test">
                     <ul class="sc">
-                    <li class="htitle"><a onclick="introduce()">소개(I)</a></li>
-                    <li class="htitle"><a onclick="brand()">브랜드(B)</a></li>
-                    <li class="htitle"><a onclick="project()">프로젝트(P)</a></li>
+                    <li class="htitle"><a class="dos" onclick="introduce()">소개(I)</a></li>
+                    <li class="htitle"><a class="dos" onclick="brand()">브랜드(B)</a></li>
+                    <li class="htitle"><a class="dos" onclick="project()">프로젝트(P)</a></li>
                     </ul>
                 </nav>
             </nav>
@@ -36,6 +36,7 @@
             <a><button type="button" class="btn2" onclick="Menu()"><img class="icon" src="icons/bx-menu.svg"></button></a>
             </nav>
         </header>
+        <img class="boot" src="icons/welindowsboot.png" id="boot">
         <div class="container" id="c1">
             <div class="title">
                 <h1 class="titleani" id="t1">
@@ -46,10 +47,52 @@
                 웰로우 - 학생들이 세상을 구한다!
             </h2>
         </div>
-        <footer>
-            <a><button type="button" class="btn3" onclick="startpage()">Start</button></a>
-            <div class="footertitle"><h1 class="footertitle">Copyright 2022 WelloStudio.</h1></div>
-            <button type="button" class="btn3" id="timesjs" onclick="darkmode()"></button>
+        <footer class="mainfooter">
+            <div class="startmenu" id="startMenu">
+                <nav> 
+                    <ul class="welindow">
+                        <li class="lindow">
+                            welindows95
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="menunav">
+                    <ul>
+                        <li>
+                            <a onclick="shutdown()">전원 끄기</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a onclick="restart()">다시 시작</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a onclick="startpage()">*시작하기!</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="rem1">
+                            <a class="rem1" onclick="secret()">매우 비밀스런 무언가</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerclass">
+                <a><button type="button" class="btn3" onclick="menuopen()"><img class="icon" src="icons/welindowsos95.png">시작</button></a>
+                <button type="button" class="btn4" id="timesjs" onclick="darkmode()"></button>
+            </div>
+            <div class="footertitle"><h1 class="dos footertitle">Copyright 2022 웰로우스튜디오</h1></div>
+            <nav class="footernav">
+                <ul>
+                    <li>
+                        <a class="footera" onclick="privacy()">Privacy</a>
+                        <a class="footera" onclick="brand()">TOS</a>
+                        <a class="footera" href="support">Discord</a>
+                    </li>
+                </ul>
+            </nav>
         </footer>
     </body>
     <script type="text/javascript" src="js/main.js"></script>

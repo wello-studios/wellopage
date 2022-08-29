@@ -9,10 +9,10 @@ function mutebtn() {
     const player = document.getElementById('video');
     if  (player.muted) {
         player.muted = false;
-        mutebutton.innerHTML = '<img src="src/full.svg">ON';
+        mutebutton.innerHTML = '<img src="new/src/full.svg">ON';
     }
     else {
         player.muted = true;
-        mutebutton.innerHTML = '<img src="src/mute.svg">OFF';
+        mutebutton.innerHTML = '<img src="new/src/mute.svg">OFF';
     }
 }
